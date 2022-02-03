@@ -7,7 +7,7 @@
 import shutil
 src=r'/etc/apache2/'
 des=r’/root/OC-P6/p6backup/’
-shutil.copy2(src, des)
+shutil.copytree(src, des)
 
 
 
@@ -20,7 +20,7 @@ shutil.copy2(src, des)
 import shutil
 src=r'/var/www/html'
 des=r’/root/OC-P6/p6backup/’
-shutil.copy2(src, des)
+shutil.copytree(src, des)
 
 
 
@@ -30,7 +30,7 @@ shutil.copy2(src, des)
 import shutil
 src=r'/etc/php/'
 des=r’/root/OC-P6/p6backup/’
-shutil.copy2(src, des)
+shutil.copytree(src, des)
 
 
 # Copie le contenu du répertoire base de données (Wordpress / Maria db et MySqL) vers dossier sauvegarde P6 "/root/OC-P6/p6backup/"
@@ -39,5 +39,4 @@ shutil.copy2(src, des)
 import shutil
 src=r'/tmp/'
 des=r’/root/OC-P6/p6backup/’
-shutil.copy2(src, des)
-
+shutil.copytree(src, des)

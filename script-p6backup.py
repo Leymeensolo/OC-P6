@@ -1,9 +1,9 @@
 #!/usr/bin/python
-
+# coding=utf-8
 
 from datetime import date 
 from shutil import copytree
-# coding=utf-8
+
 
 date_backup = date.today() 
 print(date_backup) 

@@ -18,7 +18,7 @@ path_input ="/etc/apache2/"
 path_output ="/root/OC-P6/p6backup/" + str_date_backup 
 print(path_output) 
 
-copytree(path_input,path_output)
+copytree(path_input,path_output,dirs_exist_ok=True)
 
 
 # Copie le contenu du répertoire package php + le contenu du répertoire wordpress vers dossier sauvegarde P6 "/root/OC-P6/p6backup/"
@@ -29,7 +29,7 @@ path_input ="/var/www/html"
 path_output ="/root/OC-P6/p6backup/" + str_date_backup 
 print(path_output) 
 
-copytree(path_input,path_output)
+copytree(path_input,path_output,dirs_exist_ok=True)
 
 
 # Copie le contenu du répertoire fichier de configuration  php vers dossier sauvegarde P6 "/root/OC-P6/p6backup/"
@@ -38,7 +38,7 @@ path_input ="/etc/php/"
 path_output ="/root/OC-P6/p6backup/" + str_date_backup 
 print(path_output) 
 
-copytree(path_input,path_output)
+copytree(path_input,path_output,dirs_exist_ok=True)
 
 
 # Copie le contenu du répertoire base de données (Wordpress / Maria db et MySqL) vers dossier sauvegarde P6 "/root/OC-P6/p6backup/"
@@ -47,4 +47,4 @@ path_input ="/tmp/"
 path_output ="/root/OC-P6/p6backup/" + str_date_backup 
 print(path_output) 
 
-copytree(path_input,path_output)
+copytree(path_input,path_output,dirs_exist_ok=True)

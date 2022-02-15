@@ -1,17 +1,22 @@
 #!/usr/bin/python
 # coding=utf-8
 
+
 from datetime import date 
 from shutil import copytree
 
 import os
-import zipfile
+import shutil
+
 
 date_backup = date.today() 
 print(date_backup) 
 
 str_date_backup = str(date_backup).replace('-','.') 
 print(str_date_backup) 
+
+
+
 
 # Copie le contenu du répertoire apache2 vers dossier sauvegarde P6 "/root/OC-P6/p6backup/"
 # /etc/apache2/
@@ -22,16 +27,14 @@ print(path_output)
 
 copytree(path_input,path_output)
 
-def zipdir(path, zipHandle):
-    for root, dirs, files in os.walk(path):
-    #Only Zip the files
-    #And Not the Sub-Directories
-        for file in files:
-            zipHandle.write(os.path.join(root, file))
- 
-archiveFile = zipfile.ZipFile('Documents.zip', 'w', zipfile.ZIP_DEFLATED)
-zipdir('Documents/', archiveFile)
-archiveFile.close()
+# Création Archive Zip
+filename1 = "apache2"
+format = "zip"
+directory = os.getcwd()
+shutil.make_archive(filename1, format, directory)
+print(filename1) 
+
+
 
 
 # Copie le contenu du répertoire package php + le contenu du répertoire wordpress vers dossier sauvegarde P6 "/root/OC-P6/p6backup/"
@@ -44,6 +47,15 @@ print(path_output)
 
 copytree(path_input,path_output)
 
+# Création Archive Zip
+filename2 = "html"
+format = "zip"
+directory = os.getcwd()
+shutil.make_archive(filename2, format, directory)
+print(filename2) 
+
+
+
 
 # Copie le contenu du répertoire fichier de configuration  php vers dossier sauvegarde P6 "/root/OC-P6/p6backup/"
 # /etc/php/7.3
@@ -53,16 +65,15 @@ print(path_output)
 
 copytree(path_input,path_output)
 
-def zipdir(path, zipHandle):
-    for root, dirs, files in os.walk(path):
-    #Only Zip the files
-    #And Not the Sub-Directories
-        for file in files:
-            zipHandle.write(os.path.join(root, file))
- 
-archiveFile = zipfile.ZipFile('Documents.zip', 'w', zipfile.ZIP_DEFLATED)
-zipdir('Documents/', archiveFile)
-archiveFile.close()
+# Création Archive Zip
+filename3 = "php"
+format = "zip"
+directory = os.getcwd()
+shutil.make_archive(filename3, format, directory)
+print(filename3) 
+
+
+
 
 # Copie le contenu du répertoire base de données (Wordpress / Maria db et MySqL) vers dossier sauvegarde P6 "/root/OC-P6/p6backup/"
 # /tmp/
@@ -72,13 +83,10 @@ print(path_output)
 
 copytree(path_input,path_output)
 
-def zipdir(path, zipHandle):
-    for root, dirs, files in os.walk(path):
-    #Only Zip the files
-    #And Not the Sub-Directories
-        for file in files:
-            zipHandle.write(os.path.join(root, file))
- 
-archiveFile = zipfile.ZipFile('Documents.zip', 'w', zipfile.ZIP_DEFLATED)
-zipdir('Documents/', archiveFile)
-archiveFile.close()
+# Création Archive Zip
+filename4 = "tmp"
+format = "zip"
+directory = os.getcwd()
+shutil.make_archive(filename4, format, directory)
+print(filename4) 
+

@@ -20,18 +20,17 @@ print(str_date_backup)
 # Copie le contenu du répertoire apache2 vers dossier sauvegarde P6 "/root/OC-P6/p6backup/"
 # /etc/apache2/
 # /etc/apache2/apache2.conf
-path_input ="/etc/apache2/" 
-path_output ="/root/OC-P6/p6backup/apache2/" + str_date_backup 
-print(path_output) 
+chemin_source_apache ="/etc/apache2/" 
+chemin_destination_apache ="/root/OC-P6/p6backup/apache2/" + str_date_backup 
+print(chemin_destination_apache) 
 
-copytree(path_input,path_output)
+copytree(chemin_source_apache,chemin_destination_apache)
 
 # Création Archive Zip
-filename1 = "apache2"
+nom_archive_apache = "apache2"
 format = "zip"
-directory = os.getcwd()
-make_archive(filename1, format, directory)
-print(filename1) 
+make_archive(nom_archive_apache, format, chemin_destination_apache)
+print(nom_archive_apache) 
 
 
 
@@ -40,52 +39,52 @@ print(filename1)
 # /var/www/html/p6.php
 # /var/www/html/wp-config-sample.php
 # /var/www/html/wordpress/
-path_input ="/var/www/html/"
-path_output ="/root/OC-P6/p6backup/html/" + str_date_backup 
-print(path_output) 
+chemin_source_html ="/var/www/html/"
+chemin_destination_html ="/root/OC-P6/p6backup/html/" + str_date_backup 
+print(chemin_destination_html) 
 
-copytree(path_input,path_output)
+copytree(chemin_source_html,chemin_destination_html)
 
 # Création Archive Zip
-filename2 = "html"
+nom_archive_html = "html"
 format = "zip"
-directory = os.getcwd()
-make_archive(filename2, format, directory)
-print(filename2) 
+make_archive(nom_archive_html, format, chemin_destination_html)
+print(nom_archive_html) 
+
 
 
 
 
 # Copie le contenu du répertoire fichier de configuration  php vers dossier sauvegarde P6 "/root/OC-P6/p6backup/"
 # /etc/php/7.3
-path_input ="/etc/php/"
-path_output ="/root/OC-P6/p6backup/php/" + str_date_backup 
-print(path_output) 
+chemin_source_php ="/etc/php/"
+chemin_destination_php ="/root/OC-P6/p6backup/html/" + str_date_backup 
+print(chemin_destination_php) 
 
-copytree(path_input,path_output)
+copytree(chemin_source_php,chemin_destination_php)
 
 # Création Archive Zip
-filename3 = "php"
+nom_archive_php = "php"
 format = "zip"
-directory = os.getcwd()
-make_archive(filename3, format, directory)
-print(filename3) 
+make_archive(nom_archive_php, format, chemin_destination_php)
+print(nom_archive_php) 
+
 
 
 
 
 # Copie le contenu du répertoire base de données (Wordpress / Maria db et MySqL) vers dossier sauvegarde P6 "/root/OC-P6/p6backup/"
 # /tmp/
-path_input ="/tmp/"
-path_output ="/root/OC-P6/p6backup/tmp/" + str_date_backup 
-print(path_output) 
+chemin_source_tmp ="/tmp/"
+chemin_destination_tmp ="/root/OC-P6/p6backup/html/" + str_date_backup 
+print(chemin_destination_tmp) 
 
-copytree(path_input,path_output)
+copytree(chemin_source_tmp,chemin_destination_tmp)
 
 # Création Archive Zip
-filename4 = "tmp"
+nom_archive_tmp = "tmp"
 format = "zip"
-directory = os.getcwd()
-make_archive(filename4, format, directory)
-print(filename4) 
+make_archive(nom_archive_tmp, format, chemin_destination_tmp)
+print(nom_archive_tmp) 
+
 

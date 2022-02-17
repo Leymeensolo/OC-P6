@@ -3,10 +3,9 @@
 
 
 from datetime import date 
-from shutil import copytree
+from shutil import copytree make_archive
 
 import os
-import shutil
 
 
 date_backup = date.today() 
@@ -31,7 +30,7 @@ copytree(path_input,path_output)
 filename1 = "apache2"
 format = "zip"
 directory = os.getcwd()
-shutil.make_archive(filename1, format, directory)
+make_archive(filename1, format, directory)
 print(filename1) 
 
 
@@ -51,7 +50,7 @@ copytree(path_input,path_output)
 filename2 = "html"
 format = "zip"
 directory = os.getcwd()
-shutil.make_archive(filename2, format, directory)
+make_archive(filename2, format, directory)
 print(filename2) 
 
 
@@ -69,7 +68,7 @@ copytree(path_input,path_output)
 filename3 = "php"
 format = "zip"
 directory = os.getcwd()
-shutil.make_archive(filename3, format, directory)
+make_archive(filename3, format, directory)
 print(filename3) 
 
 
@@ -87,6 +86,6 @@ copytree(path_input,path_output)
 filename4 = "tmp"
 format = "zip"
 directory = os.getcwd()
-shutil.make_archive(filename4, format, directory)
+make_archive(filename4, format, directory)
 print(filename4) 
 

@@ -58,7 +58,7 @@ print(nom_archive_html)
 # Copie le contenu du répertoire fichier de configuration  php vers dossier sauvegarde P6 "/root/OC-P6/p6backup/"
 # /etc/php/7.3
 chemin_source_php ="/etc/php/"
-chemin_destination_php ="/root/OC-P6/p6backup/html/" + str_date_backup 
+chemin_destination_php ="/root/OC-P6/p6backup/php/" + str_date_backup 
 print(chemin_destination_php) 
 
 copytree(chemin_source_php,chemin_destination_php)
@@ -75,16 +75,16 @@ print(nom_archive_php)
 
 # Copie le contenu du répertoire base de données (Wordpress / Maria db et MySqL) vers dossier sauvegarde P6 "/root/OC-P6/p6backup/"
 # /tmp/
-chemin_source_tmp ="/tmp/"
-chemin_destination_tmp ="/root/OC-P6/p6backup/html/" + str_date_backup 
-print(chemin_destination_tmp) 
+chemin_source_mysql ="/etc/mysql/"
+chemin_destination_mysql ="/root/OC-P6/p6backup/mysql/" + str_date_backup 
+print(chemin_destination_mysql) 
 
-copytree(chemin_source_tmp,chemin_destination_tmp)
+copytree(chemin_source_mysql,chemin_destination_mysql)
 
 # Création Archive Zip
-nom_archive_tmp = "tmp"
+nom_archive_mysql = "mysql"
 format = "zip"
-make_archive(nom_archive_tmp, format, chemin_destination_tmp)
-print(nom_archive_tmp) 
+make_archive(nom_archive_mysql, format, chemin_destination_mysql)
+print(nom_archive_mysql) 
 
 

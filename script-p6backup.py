@@ -27,7 +27,7 @@ print(chemin_destination_apache)
 copytree(chemin_source_apache,chemin_destination_apache)
 
 # Création Archive Zip
-nom_archive_apache = "apache2"
+nom_archive_apache = "/root/OC-P6/p6backup/apache2/archives_apache"
 format = "zip"
 make_archive(nom_archive_apache, format, chemin_destination_apache)
 print(nom_archive_apache) 
@@ -46,7 +46,7 @@ print(chemin_destination_html)
 copytree(chemin_source_html,chemin_destination_html)
 
 # Création Archive Zip
-nom_archive_html = "html"
+nom_archive_html = "/root/OC-P6/p6backup/html/archives_html"
 format = "zip"
 make_archive(nom_archive_html, format, chemin_destination_html)
 print(nom_archive_html) 
@@ -64,7 +64,7 @@ print(chemin_destination_php)
 copytree(chemin_source_php,chemin_destination_php)
 
 # Création Archive Zip
-nom_archive_php = "php"
+nom_archive_php = "/root/OC-P6/p6backup/php/archives_php"
 format = "zip"
 make_archive(nom_archive_php, format, chemin_destination_php)
 print(nom_archive_php) 
@@ -82,7 +82,7 @@ print(chemin_destination_mysql)
 copytree(chemin_source_mysql,chemin_destination_mysql)
 
 # Création Archive Zip
-nom_archive_mysql = "mysql"
+nom_archive_mysql = "/root/OC-P6/p6backup/mysql/archives_mysql"
 format = "zip"
 make_archive(nom_archive_mysql, format, chemin_destination_mysql)
 print(nom_archive_mysql) 

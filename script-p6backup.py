@@ -63,7 +63,7 @@ print(nom_archive_html)
 # /etc/php/7.3
 chemin_source_php ="/etc/php/"
 chemin_destination_php ="/root/OC-P6/p6backup/php/" + str_date_backup 
-print(chemin_destination_php) 
+print(chemin_destination_php)  
 
 copytree(chemin_source_php,chemin_destination_php)
 

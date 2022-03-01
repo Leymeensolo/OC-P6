@@ -27,6 +27,10 @@ print(str_date_backup)
 
 
 
+
+
+
+#APACHE2
 # Copie le contenu du répertoire depuis sa source vers sa destination (dossier de backup) 
 # "Print..." Affiche et donne la valeur de la variable qui donne le chemin vers du dossier de destination
 chemin_source_apache ="/etc/apache2/" 
@@ -44,6 +48,9 @@ print(nom_archive_apache)
 
 
 
+
+
+#HTML
 # Copie le contenu du répertoire depuis sa source vers sa destination (dossier de backup) 
 # "Print..." Affiche et donne la valeur de la variable qui donne le chemin vers du dossier de destination
 chemin_source_html ="/var/www/html/"
@@ -62,6 +69,8 @@ print(nom_archive_html)
 
 
 
+
+#PHP
 # Copie le contenu du répertoire depuis sa source vers sa destination (dossier de backup) 
 # "Print..." Affiche et donne la valeur de la variable qui donne le chemin vers du dossier de destination
 chemin_source_php ="/etc/php/"
@@ -80,6 +89,8 @@ print(nom_archive_php)
 
 
 
+
+#MYSQL
 # Copie le contenu du répertoire depuis sa source vers sa destination (dossier de backup) 
 # "Print..." Affiche et donne la valeur de la variable qui donne le chemin vers du dossier de destination
 chemin_source_mysql ="/etc/mysql/"

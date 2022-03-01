@@ -17,9 +17,9 @@ date_backup = date.today()
 print(date_backup) 
 
 #str_date_backup = str(date_backup).replace('-','.') 
-#Pour la variable str_date_backup 
-#Dans la chaine de caractères de la variable "str(date_backup)" 
-#(suite) Puis avec ".replace('-','.') = on remplace les tirets"-" par des points "."
+#La variable "str(date_backup)" = Contient  la variable  "str(date_backup).replace('-','.') "
+# str(date_backup)= execute la date du jour -> date_backup = date.today() 
+#Puis avec ".replace('-','.') = on remplace les tirets"-" par des points "."
 #print(str_date_backup)= Affichage de la variable (str_date_backup) 
 str_date_backup = str(date_backup).replace('-','.') 
 print(str_date_backup) 

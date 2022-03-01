@@ -1,10 +1,14 @@
 #!/usr/bin/python
 # coding=utf-8
 
-
+#Par rapport au module de date import de la fonction date du jour
+#Par rapport au module shutil 
+#import de la fonction copytree pour copier une arborescence
+#import de la fonction make_archive pour archiver, compresser
 from datetime import date 
 from shutil import copytree, make_archive
 
+#import de la fonction os 
 import os
 
 

@@ -16,7 +16,10 @@ import os
 date_backup = date.today() 
 print(date_backup) 
 
-#La variable str_date_backup = str(date_backup).replace
+#Pour la variable str_date_backup 
+#Dans la chaine de caractères de la variable "str(date_backup)" 
+#(suite) Puis avec ".replace('-','.') = on remplace les tirets"-" par des points "."
+#print(str_date_backup)= Affichage de la variable (str_date_backup) 
 str_date_backup = str(date_backup).replace('-','.') 
 print(str_date_backup) 
 

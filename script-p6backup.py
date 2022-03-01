@@ -8,6 +8,7 @@
 from datetime import date 
 from shutil import copytree, make_archive
 
+#IMPORT DE FONCTIONS POUR LES REUTILISER DANS LE SCRIPT
 #import de la fonction os 
 import os
 

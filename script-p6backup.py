@@ -11,10 +11,12 @@ from shutil import copytree, make_archive
 #import de la fonction os 
 import os
 
-
+#La variable "date date_backup" = date.today() = la date du jour
+#print(date_backup)= affiche la date du jour
 date_backup = date.today() 
 print(date_backup) 
 
+#La variable str_date_backup = str(date_backup).replace
 str_date_backup = str(date_backup).replace('-','.') 
 print(str_date_backup) 
 

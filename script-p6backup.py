@@ -1,27 +1,31 @@
 #!/usr/bin/python
 # coding=utf-8
 
+#le format Utf8 = format d’encodage de charactère qui prends en compte tous les caractères également les spéciaux
 #Depuis le module de date= "datetime " (intégré à python) import de la fonction "date"= date du jour
-#Depuis le module "shutil"
+#Depuis le module utilitaire "shutil"
 #import de la fonction copytree pour copier une arborescence
 #import de la fonction "make_archive" pour archiver, compresser
 from datetime import date 
 from shutil import copytree, make_archive
 
 #IMPORT DE FONCTIONS POUR LES REUTILISER DANS LE SCRIPT
-#import de la fonction os 
+#import de la fonction os -> qui récupère le répertoire courant d'où on se trouve
 import os
 
+#Une fonction est toujours déclarée avec des ()
 #La variable "date date_backup" = date.today() = la date du jour
+#date.today() -> today() = Fonction du module date
 #print(date_backup)= affiche et donne la valeur de la variable "date_backup" = la date du jour
 date_backup = date.today() 
 print(date_backup) 
 
 #str_date_backup = str(date_backup).replace('-','.') 
-#La variable "str(date_backup)" = Contient  la variable  "str(date_backup).replace('-','.') "
-# str(date_backup)= execute la date du jour -> date_backup = date.today() 
-#Puis avec ".replace('-','.') = on remplace les tirets"-" par des points "."
+#str= une fonction qui prends comme argument une variable = date_backup -> pour resortir le tous en chaine de caractère "String"
+#Puis on met un point . pour séparé l'autre fonction= replace ()
+#Cette fonction= replace('-','.')= lors de l'affichage de la date du jour, elle remplacera le tirets - par des points . au moment du print"
 #print(str_date_backup)= affiche et donne la valeur de la variable (str_date_backup) 
+#print(str_date_backup)= affiche aussi sous forme de string (chaine de charactères) 
 str_date_backup = str(date_backup).replace('-','.') 
 print(str_date_backup) 
 

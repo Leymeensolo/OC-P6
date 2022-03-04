@@ -36,8 +36,12 @@ print(str_date_backup)
 
 
 #APACHE2
-# Copie le contenu du répertoire depuis sa source vers sa destination (dossier de backup) 
-# "Print..." Affiche et donne la valeur de la variable qui donne le chemin vers du dossier de destination
+# chemin_source_ ... = la source
+# chemin_destination_...= la destination 
+#"Print..." Affiche sous forme de string et donne la valeur de la variable qui donne le chemin vers du dossier de destination
+# copytree = Fonction qui copie le contenu du répertoire avec son arborescence  
+# chemin_source_ ... = la source= Variable en argument de la fonction copytree 
+# chemin_destination_...= la destination = Variable en argument de la fonction copytree 
 chemin_source_apache ="/etc/apache2/" 
 chemin_destination_apache ="/root/OC-P6/p6backup/apache2/" + str_date_backup 
 print(chemin_destination_apache) 
@@ -59,8 +63,12 @@ print(nom_archive_apache)
 
 
 #HTML
-# Copie le contenu du répertoire depuis sa source vers sa destination (dossier de backup) 
-# "Print..." Affiche et donne la valeur de la variable qui donne le chemin vers du dossier de destination
+# chemin_source_ ... = la source
+# chemin_destination_...= la destination 
+#"Print..." Affiche sous forme de string et donne la valeur de la variable qui donne le chemin vers du dossier de destination
+# copytree = Fonction qui copie le contenu du répertoire avec son arborescence  
+# chemin_source_ ... = la source= Variable en argument de la fonction copytree 
+# chemin_destination_...= la destination = Variable en argument de la fonction copytree 
 chemin_source_html ="/var/www/html/"
 chemin_destination_html ="/root/OC-P6/p6backup/html/" + str_date_backup 
 print(chemin_destination_html) 
@@ -82,8 +90,12 @@ print(nom_archive_html)
 
 
 #PHP
-# Copie le contenu du répertoire depuis sa source vers sa destination (dossier de backup) 
-# "Print..." Affiche et donne la valeur de la variable qui donne le chemin vers du dossier de destination
+# chemin_source_ ... = la source
+# chemin_destination_...= la destination 
+#"Print..." Affiche sous forme de string et donne la valeur de la variable qui donne le chemin vers du dossier de destination
+# copytree = Fonction qui copie le contenu du répertoire avec son arborescence  
+# chemin_source_ ... = la source= Variable en argument de la fonction copytree 
+# chemin_destination_...= la destination = Variable en argument de la fonction copytree 
 chemin_source_php ="/etc/php/"
 chemin_destination_php ="/root/OC-P6/p6backup/php/" + str_date_backup 
 print(chemin_destination_php)  
@@ -105,8 +117,12 @@ print(nom_archive_php)
 
 
 #MYSQL
-# Copie le contenu du répertoire depuis sa source vers sa destination (dossier de backup) 
-# "Print..." Affiche et donne la valeur de la variable qui donne le chemin vers du dossier de destination
+# chemin_source_ ... = la source
+# chemin_destination_...= la destination 
+#"Print..." Affiche sous forme de string et donne la valeur de la variable qui donne le chemin vers du dossier de destination
+# copytree = Fonction qui copie le contenu du répertoire avec son arborescence  
+# chemin_source_ ... = la source= Variable en argument de la fonction copytree 
+# chemin_destination_...= la destination = Variable en argument de la fonction copytree 
 chemin_source_mysql ="/etc/mysql/"
 chemin_destination_mysql ="/root/OC-P6/p6backup/mysql/" + str_date_backup 
 print(chemin_destination_mysql) 

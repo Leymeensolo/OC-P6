@@ -1,7 +1,7 @@
  | | MANUEL D'INSTRUCTION | | |
 
 
-1. PRE REQUIS AVANT LE LANCEMENT DU SCRIPT 
+1. PRE REQUIS AVANT LE LANCEMENT DU SCRIPT         
 Au préalable, avant le lancement du script d’automatisation de sauvegarde, pour avoir des données à sauvegarder :
 
 Depuis une VM debian distante, on installe de l’applicatif et de la base de données:
@@ -13,18 +13,18 @@ Pour les bases de données Maria DB -> Paramétrages standards et paramétrages 
 Egalement associé à la VM Debian on créer un site Wordpress
 - Création d’un site Web WordPress
 
-————————————————————————————————————————————————————————————————————
+—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 2. CE QUE CONTIENT LE REPOSITORY GITHUB
 - Un script
 - Une License OpenSource: qui inclue des critères pour les droits d’exploitations, de droits modifications et diffusion.
 - Un fichier readme.md
 
-————————————————————————————————————————————————————————————————————
+—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 3. RECUPERATION DU SCRIPT AINSI QUE SES MODIFICATIONS APPORTEES DEPUIS LE REPOSITORY GITHUB
 Ce repository GitHub est paramétrer pour être synchronisé et envoyé vers une VM distante (VM Serveur Debian) via le protocole SSH. 
 ⁃Depuis la VM distante (VM Serveur Debian), commande "git pull" pour récupérer le script ainsi que ses modifications apportées depuis GITHUB 
 
-————————————————————————————————————————————————————————————————————
+—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 4. EXECUTION ET FONCTIONNEMENT DU SCRIPT
 Exécuté de de manière manuel par l’administrateur en tant que ROOT sur sur une VM debian distante:
 

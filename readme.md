@@ -1,7 +1,7 @@
  | | MANUEL D'INSTRUCTION | | |
 
 
-1. PRE REQUIS AVANT LE LANCEMENT DU SCRIPT
+1. PRE REQUIS AVANT LE LANCEMENT DU SCRIPT 
 Au préalable, avant le lancement du script d’automatisation de sauvegarde, pour avoir des données à sauvegarder :
 
 Depuis une VM debian distante, on installe de l’applicatif et de la base de données:

@@ -16,7 +16,8 @@ Egalement associé à la VM Debian on créer un site Wordpress
 —————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 2. CE QUE CONTIENT LE REPOSITORY GITHUB
 - Un script
-- Une License OpenSource: qui inclue des critères pour les droits d’exploitations, de droits modifications et diffusion.
+- Une License OpenSource: licence "BSD 3-Clause License (Revised)"
+qui inclue des critères pour les droits d’exploitations, de droits modifications et diffusion.
 - Un fichier readme.md
 
 —————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
@@ -26,7 +27,7 @@ Ce repository GitHub est paramétrer pour être synchronisé et envoyé vers une
 
 —————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 4. EXECUTION ET FONCTIONNEMENT DU SCRIPT
-Exécuté de de manière manuel par l’administrateur en tant que ROOT sur sur une VM debian distante:
+Exécuté de manière manuel par l’administrateur en tant que ROOT sur sur une VM debian distante:
 
 Ce script Python automatise le Backup de certains éléments applicatif, fichiers de configuration, bases de données:  
 -d’une source vers sa destination 
